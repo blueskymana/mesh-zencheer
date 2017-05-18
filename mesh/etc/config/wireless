@@ -1,0 +1,20 @@
+config wifi-device  radio0
+        option type     mac80211
+        option channel  3
+        option hwmode   11g
+        option path     'pci0000:00/0000:00:00.0'
+        option htmode   HT20
+        option short_gi_20 1
+        option ldpc     1
+        option chanbw   20
+        option txpower  30
+        option distance 10000
+
+config wifi-iface
+        option device radio0
+        option network batnet
+        option mode adhoc
+        option ssid NexFi00
+        option hidden 1
+        option bssid 00:0B:27:E8:E4:3D
+        option encryption none
