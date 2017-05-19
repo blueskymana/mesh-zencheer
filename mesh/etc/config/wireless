@@ -18,3 +18,4 @@ config wifi-iface
         option hidden 1
         option bssid 00:0B:27:E8:E4:3D
         option encryption none
+        option ifname adhoc0
