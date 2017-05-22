@@ -4,5 +4,5 @@
 sleep 7
 brctl addif br-lan bat0
 echo 300 > /sys/class/net/bat0/mesh/orig_interval
-chmod +x /etc/nexfi-led.sh
-/etc/nexfi-led.sh>/dev/null 2>&1
+chmod +x /usr/bin/nexfi-led.sh
+/usr/bin/nexfi-led.sh > /dev/null 2 > &1
