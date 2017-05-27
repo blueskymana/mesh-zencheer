@@ -6,3 +6,6 @@ brctl addif br-lan bat0
 echo 300 > /sys/class/net/bat0/mesh/orig_interval
 chmod +x /usr/bin/nexfi-led.sh
 /usr/bin/nexfi-led.sh > /dev/null 2 > &1
+
+sleep 3
+l2cm_libuci > /dev/null &

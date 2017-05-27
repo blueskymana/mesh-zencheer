@@ -1,7 +1,7 @@
 #!/bin/sh
 
 firmware=openwrt-ar71xx-generic-ap147-010-squashfs-sysupgrade.bin
-wget -c -P /tmp http://download.nexfi.cn:8000/nexfi_products/zencheer/m600-b/bin/$firmware
+wget -c -P /tmp http://download.nexfi.cn:8000/nexfi_products/zencheer/ms580/bin/$firmware
 
 if [ -f "/tmp/$firmware" ];
 then
