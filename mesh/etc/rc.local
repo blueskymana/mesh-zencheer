@@ -1,11 +1,8 @@
 # Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
 
-sleep 7
-brctl addif br-lan bat0
-echo 300 > /sys/class/net/bat0/mesh/orig_interval
-chmod +x /usr/bin/nexfi-led.sh
 /usr/bin/nexfi-led.sh > /dev/null &
 
-sleep 3
+# start l2cm_libuci process for topology
+sleep 5
 /usr/bin/l2cm_libuci > /dev/null &
