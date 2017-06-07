@@ -6,7 +6,7 @@ config wifi-device  radio0
         option htmode   HT20
         option short_gi_20 1
         option ldpc     1
-        option chanbw   20
+        option chanbw   10
         option txpower  30
         option distance 10000
 
